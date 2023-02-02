@@ -26,24 +26,26 @@ export class AppComponent {
     {
       nombre: "Alex",
       edad: 30,
-      alive: true,
+      alive: false,
       domino: "TypesCript",
       gafas: false,
-      monstros: [
-        {
+      monstros: [{
         nombre: "rafargg",
         superpoder: "Escalar picos",
       },
       {
-        nombre: "rafargg2 JUNIOR",
-        superpoder: "Escalar piquitos",
-      },
-    ],
+        nombre: "silla super malvada para nada ergonómica de 20 pavos",
+        superpoder: "Provocar lumbalgias severas",
+      },]
     },
     {
       nombre: "Inma",
       edad: 33,
       alive: true,
+      monstros: [{
+        nombre: "rafargg2 JUNIOR",
+        superpoder: "Escalar piquitos",
+      },]
     }
 
   ]

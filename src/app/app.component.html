@@ -1,3 +1,16 @@
 <h1> PRIMER PROYECTO ANGULAR</h1>
 <app-home></app-home>
-<app-home></app-home>
+<div>
+    <h2>{{personas[0].nombre}}</h2>
+    <p>{{personas[0].edad}}</p>
+    <p> ¿Estas vivo?: {{personas[0].alive ? "si" : "no"}}</p>
+    <p *ngIf="personas[0].alive"> ESTOY VIVO! </p>
+    <p *ngIf="!personas[0].alive"> Estoy muertísimo </p>
+    <p> Domino: {{personas[0].domino}}</p>
+    <div *ngFor="let monstro of personas[0].monstros; let i = index">
+        <p> {{i + 1}} </p>
+        <h2>Tiene un monstro llamado: {{monstro.nombre}}</h2>
+        <h2>Posee el poder de: {{monstro.superpoder}}</h2>
+    </div>
+</div>
+
